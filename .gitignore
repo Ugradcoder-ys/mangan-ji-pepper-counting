@@ -1,0 +1,27 @@
+
+# データセット（容量が大きいためGitHubには上げない）
+datasets/
+data/
+*.mp4
+*.mov
+*.avi
+
+# モデルの重みファイル
+*.pt
+*.pth
+*.onnx
+runs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

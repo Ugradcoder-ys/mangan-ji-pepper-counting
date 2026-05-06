@@ -3,7 +3,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Ultralytics](https://img.shields.io/badge/Ultralytics-YOLO-green)](https://github.com/ultralytics/ultralytics)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+<!--[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)-->
 
 > 京都大学農学部 卒業研究（2025年度）  
 > フィールドロボティクス研究室
@@ -41,7 +41,7 @@
 | YOLOv8m | Anchor-free CNN | 高速・高精度のバランス |
 | YOLO11m | 軽量最適化CNN | 処理速度と精度のバランス |
 | YOLO12m | Attention機構導入 | 複雑背景での精度向上 |
-| **RT-DETR** | **Transformer** | **本研究で採用・最高性能** |
+| **RT-DETR** | **Transformer** | **追跡部分にて採用・最良性能** |
 
 ### 追跡モデル (Multi-Object Tracking)
 | モデル | 特徴 |
@@ -55,7 +55,7 @@
 - **アノテーション**: Roboflow（3クラス：fruits / flowers / dried flowers）
 - **実験環境**: Google Colab
 - **撮影機材**: GoPro MAX, GoPro9
-- **撮影場所**: 京都府農林水産技術センター（亀岡市・温室）
+- **撮影場所**: 京都府農林水産技術センター内の万願寺とうがらし栽培用温室（亀岡市）
 
 ---
 
@@ -118,12 +118,9 @@ pip install -r requirements.txt
 
 ```
 mangan-ji-pepper-counting/
-├── detect/        # 物体検出スクリプト (RT-DETR, YOLO)
-├── train/         # 学習スクリプト・設定ファイル
+├── train・detect/        # 学習・検出スクリプト (RT-DETR, YOLO)
 ├── track/         # 追跡スクリプト (ByteTrack, BoostTrack等)
-├── evaluate/      # 評価・精度計算スクリプト
 ├── images/        # デモ画像・実験結果グラフ
-├── notebooks/     # Google Colab実験ノートブック
 └── requirements.txt
 ```
 
@@ -142,4 +139,4 @@ mangan-ji-pepper-counting/
 
 **山内 翔太**  
 京都大学農学部地域環境工学科 フィールドロボティクス研究室  
-📧 [連絡先メールアドレス]
+📧 yamauchi.shota.87r@st.kyoto-u.ac.jp
